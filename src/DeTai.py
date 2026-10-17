@@ -5,71 +5,52 @@
 # Lớp: D24CQDT01-N
 # ============================================================
 
+def kiem_tra_dau_vao(a, x):
+    """
+    Kiểm tra dữ liệu đầu vào theo phiếu DT019:
+    - Kích thước mảng n từ 0 đến 10000
+    - x phải là số nguyên
+    """
+    if len(a) > 10000:
+        raise ValueError("Kích thước mảng n không được vượt quá 10000")
+    if not isinstance(x, int):
+        raise TypeError("x phải là số nguyên")
+    return True
 
 def tim_tuyen_tinh(a, x):
     """
     Tìm vị trí đầu tiên của x trong mảng a (1-based).
     Trả về 0 nếu không tìm thấy.
-
-    Tham số:
-    - a: list[int] - mảng số nguyên
-    - x: int - giá trị cần tìm
-
-    Trả về:
-    - int: vị trí (1-based) hoặc 0
     """
     for i in range(len(a)):
         if a[i] == x:
-            return i + 1   # Python 0-based -> chuyển sang 1-based
+            return i + 1
     return 0
-
 
 def tim_va_dem(a, x):
     """
-    Tìm vị trí đầu tiên của x và đếm số phép so sánh.
-    Dừng ngay khi tìm thấy.
-
-    Tham số:
-    - a: list[int] - mảng số nguyên
-    - x: int - giá trị cần tìm
-
-    Trả về:
-    - tuple (vi_tri, so_sanh)
+    Tìm vị trí đầu tiên của x và đếm số phép so sánh thực tế.
     """
-    dem = 0
+    so_sanh = 0
     for i in range(len(a)):
-        dem += 1                # Tăng đếm TRƯỚC khi so sánh
+        so_sanh += 1
         if a[i] == x:
-            return (i + 1, dem) # 1-based
-    return (0, dem)
+            return i + 1, so_sanh
+    return 0, so_sanh
 
-
-def trung_binh_so_sanh(a):
+def trung_binh_so_sanh(n):
     """
-    Tính trung bình số so sánh khi tìm mỗi phần tử trong mảng.
-    Áp dụng cho mảng phân biệt, mỗi phần tử đều có mặt.
-
-    Tham số:
-    - a: list[int] - mảng phân biệt
-
-    Trả về:
-    - float: trung bình số so sánh
+    Tính số phép so sánh trung bình lý thuyết (n+1)/2.
+    Điều kiện: các phần tử trong mảng phân biệt và x chắc chắn có trong mảng.
     """
-    n = len(a)
     if n == 0:
         return 0.0
-    tong = 0
-    for x in a:
-        _, dem = tim_va_dem(a, x)
-        tong += dem
-    return tong / n
+    return (n + 1) / 2.0
 
-
-def kiem_tra_mang(a):
+def giai_bai(a, x):
     """
-    Kiểm tra mảng không rỗng.
-
-    Trả về:
-    - bool: True nếu hợp lệ, False nếu rỗng
+    Hàm gọi chính thực hiện toàn bộ quy trình bài toán.
     """
-    return len(a) > 0
+    kiem_tra_dau_vao(a, x)
+    vi_tri, so_sanh = tim_va_dem(a, x)
+    return {"vi_tri": vi_tri, "so_sanh": so_sanh}

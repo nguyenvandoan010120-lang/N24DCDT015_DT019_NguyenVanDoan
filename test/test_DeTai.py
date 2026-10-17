@@ -10,7 +10,7 @@ import os
 
 # Thêm đường dẫn src/ vào sys.path để import được DeTai
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
-from DeTai import tim_tuyen_tinh, tim_va_dem, trung_binh_so_sanh, kiem_tra_mang
+from DeTai import tim_tuyen_tinh, tim_va_dem, trung_binh_so_sanh, kiem_tra_dau_vao
 
 
 class TestDT019(unittest.TestCase):
@@ -65,12 +65,19 @@ class TestDT019(unittest.TestCase):
 
     def test_T11_trung_binh_so_sanh(self):
         """T11: Trung bình số so sánh với n=5 phải bằng 3.0"""
-        self.assertAlmostEqual(trung_binh_so_sanh([1, 2, 3, 4, 5]), 3.0, places=5)
+        # Sửa lại: Hàm trung_binh_so_sanh giờ nhận vào số nguyên n, không phải mảng
+        self.assertAlmostEqual(trung_binh_so_sanh(5), 3.0, places=5)
 
-    def test_T12_kiem_tra_mang(self):
-        """T12: Hàm kiem_tra_mang trả False cho mảng rỗng"""
-        self.assertFalse(kiem_tra_mang([]))
-        self.assertTrue(kiem_tra_mang([1, 2, 3]))
+    def test_T12_kiem_tra_dau_vao(self):
+        """T12: Hàm validator phải chặn mảng quá lớn và x không phải số nguyên"""
+        # Mảng > 10000 phần tử phải báo lỗi ValueError
+        with self.assertRaises(ValueError):
+            kiem_tra_dau_vao([1] * 10001, 5)
+        # x không phải số nguyên phải báo lỗi TypeError
+        with self.assertRaises(TypeError):
+            kiem_tra_dau_vao([1, 2, 3], "abc")
+        # Mảng hợp lệ phải trả về True
+        self.assertTrue(kiem_tra_dau_vao([1, 2, 3], 5))
 
     # ========================================================
     # 4 KIỂM TRA BỔ SUNG (VALIDATOR / BẤT BIẾN)
@@ -93,9 +100,8 @@ class TestDT019(unittest.TestCase):
 
     def test_V04_trung_binh_khop_cong_thuc(self):
         """V04: Trung bình phải khớp (n+1)/2 với mảng phân biệt"""
-        a = [1, 2, 3, 4, 5, 6, 7]
-        n = len(a)
-        tb = trung_binh_so_sanh(a)
+        n = 7
+        tb = trung_binh_so_sanh(n) # Sửa lại: Truyền n vào
         self.assertAlmostEqual(tb, (n + 1) / 2, places=5)
 
 
