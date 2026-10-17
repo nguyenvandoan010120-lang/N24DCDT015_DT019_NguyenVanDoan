@@ -8,7 +8,7 @@ Mã đề: DT019
 Tên đề: Tìm kiếm tuyến tính và đếm so sánh thực tế
 
 URL GitHub thật: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan.git
-SHA C đầy đủ của mã/test/input dùng chạy và chụp ảnh: [ĐIỀN MÃ SHA C VÀO ĐÂY]
+SHA C đầy đủ của mã/test/input dùng chạy và chụp ảnh: 9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc
 Permalink tệp thuật toán chính tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/main/src/DeTai.py
 Permalink tệp kiểm thử tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/main/test/test_DeTai.py
 SHA S đầy đủ của phiên bản nộp cuối: (Ghi chú: Sẽ cập nhật sau khi chốt commit cuối)
