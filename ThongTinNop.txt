@@ -1,0 +1,35 @@
+THÔNG TIN NỘP ĐỀ TÀI CÁ NHÂN
+INT13185 — Nhóm 03
+
+Họ và tên: Nguyễn Văn Đoàn
+MSSV: N24DCDT015
+Lớp: D24CQDT01-N
+Mã đề: DT019
+Tên đề: Tìm kiếm tuyến tính và đếm so sánh thực tế
+
+URL GitHub thật: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan.git
+SHA C đầy đủ của mã/test/input dùng chạy và chụp ảnh: [ĐIỀN MÃ SHA C VÀO ĐÂY]
+Permalink tệp thuật toán chính tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/main/src/DeTai.py
+Permalink tệp kiểm thử tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/main/test/test_DeTai.py
+SHA S đầy đủ của phiên bản nộp cuối: (Ghi chú: Sẽ cập nhật sau khi chốt commit cuối)
+Xác nhận mã/test/input không đổi giữa C và S, hoặc mô tả phần đã chạy lại: Mã nguồn và test không đổi, chỉ cập nhật ảnh minh chứng.
+
+Ngôn ngữ và phiên bản: Python 3.15 (hoặc 3.11/3.12 tùy máy bạn)
+Lệnh chạy ví dụ 1: python demo.py --ca=1
+Lệnh chạy ví dụ 2: python demo.py --ca=2
+Lệnh nhập dữ liệu mới: python demo.py --ca=3 (thay đổi ca tương ứng)
+Lệnh biên dịch (nếu dùng C++): Không áp dụng (dùng Python)
+Lệnh chạy bộ kiểm thử: python test/test_DeTai.py
+Số ca kiểm độc lập: 16 (bao gồm 12 ca chức năng và 4 ca validator/biên)
+Số phép kiểm đạt / tổng số phép kiểm: 16/16 (Pass 100%)
+
+Đã có đủ 11 ảnh cá nhân trong báo cáo và ZIP (Có/Chưa): Có
+Ảnh A10 clone/chạy C đã có (Có/Chưa): Có
+Đã clone SHA S vào thư mục mới và chạy lại (Có/Chưa): Có
+Tóm tắt kết quả chạy lại hai ví dụ và bộ test từ S: Chạy thành công, 16/16 test PASS, kết quả trùng khớp với kỳ vọng.
+Giảng viên truy cập được GitHub và permalink (Có/Chưa): Có (Repo Public)
+
+Tên tệp Word nộp: N24DCDT015_DT019_NguyenVanDoan_BaoCao.docx
+Tên tệp PDF nộp: N24DCDT015_DT019_NguyenVanDoan_BaoCao.pdf
+Tên tệp ZIP mã nguồn nộp: N24DCDT015_DT019_NguyenVanDoan_MaNguon.zip
+Ngày hoàn tất: 17/10/2026
