@@ -7,27 +7,27 @@ Lớp: D24CQDT01-N
 Mã đề: DT019
 Tên đề: Tìm kiếm tuyến tính và đếm so sánh thực tế
 
-URL GitHub thật: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan.git
+URL GitHub thật: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan
 SHA C đầy đủ của mã/test/input dùng chạy và chụp ảnh: 9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc
-Permalink tệp thuật toán chính tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/main/src/DeTai.py
-Permalink tệp kiểm thử tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/main/test/test_DeTai.py
-SHA S đầy đủ của phiên bản nộp cuối: (Ghi chú: Sẽ cập nhật sau khi chốt commit cuối)
-Xác nhận mã/test/input không đổi giữa C và S, hoặc mô tả phần đã chạy lại: Mã nguồn và test không đổi, chỉ cập nhật ảnh minh chứng.
+Permalink tệp thuật toán chính tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc/src/DeTai.py
+Permalink tệp kiểm thử tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc/test/test_DeTai.py
+SHA S đầy đủ của phiên bản nộp cuối: 9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc
+Xác nhận mã/test/input không đổi giữa C và S, hoặc mô tả phần đã chạy lại: Mã nguồn src/DeTai.py, bộ kiểm thử test/test_DeTai.py và ca demo demo.py không thay đổi giữa C và S.
 
-Ngôn ngữ và phiên bản: Python 3.15 (hoặc 3.11/3.12 tùy máy bạn)
+Ngôn ngữ và phiên bản: Python 3.15 (64-bit)
 Lệnh chạy ví dụ 1: python demo.py --ca=1
 Lệnh chạy ví dụ 2: python demo.py --ca=2
-Lệnh nhập dữ liệu mới: python demo.py --ca=3 (thay đổi ca tương ứng)
-Lệnh biên dịch (nếu dùng C++): Không áp dụng (dùng Python)
+Lệnh nhập dữ liệu mới: python demo.py --ca=3
+Lệnh biên dịch (nếu dùng C++): Không áp dụng (sử dụng Python)
 Lệnh chạy bộ kiểm thử: python test/test_DeTai.py
-Số ca kiểm độc lập: 16 (bao gồm 12 ca chức năng và 4 ca validator/biên)
-Số phép kiểm đạt / tổng số phép kiểm: 16/16 (Pass 100%)
+Số ca kiểm độc lập: 16
+Số phép kiểm đạt / tổng số phép kiểm: 16/16
 
 Đã có đủ 11 ảnh cá nhân trong báo cáo và ZIP (Có/Chưa): Có
 Ảnh A10 clone/chạy C đã có (Có/Chưa): Có
 Đã clone SHA S vào thư mục mới và chạy lại (Có/Chưa): Có
-Tóm tắt kết quả chạy lại hai ví dụ và bộ test từ S: Chạy thành công, 16/16 test PASS, kết quả trùng khớp với kỳ vọng.
-Giảng viên truy cập được GitHub và permalink (Có/Chưa): Có (Repo Public)
+Tóm tắt kết quả chạy lại hai ví dụ và bộ test từ S: Chạy lại thành công trên thư mục clone sạch: ví dụ 1 trả về vi_tri = 1, so_sanh = 1; ví dụ 2 trả về vi_tri = 0, so_sanh = 3; bộ kiểm thử 16/16 ca đều PASS (OK).
+Giảng viên truy cập được GitHub và permalink (Có/Chưa): Có
 
 Tên tệp Word nộp: N24DCDT015_DT019_NguyenVanDoan_BaoCao.docx
 Tên tệp PDF nộp: N24DCDT015_DT019_NguyenVanDoan_BaoCao.pdf
