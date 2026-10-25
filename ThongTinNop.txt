@@ -8,10 +8,10 @@ Mã đề: DT019
 Tên đề: Tìm kiếm tuyến tính và đếm so sánh thực tế
 
 URL GitHub thật: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan
-SHA C đầy đủ của mã/test/input dùng chạy và chụp ảnh: 9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc
-Permalink tệp thuật toán chính tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc/src/DeTai.py
-Permalink tệp kiểm thử tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc/test/test_DeTai.py
-SHA S đầy đủ của phiên bản nộp cuối: 9dd4ab58c4694f4d46bc598f1c029d8f77c24ffc
+SHA C đầy đủ của mã/test/input dùng chạy và chụp ảnh: 082d256ea3fa89b727f1b13a05f7a0ae95aabd88
+Permalink tệp thuật toán chính tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/082d256ea3fa89b727f1b13a05f7a0ae95aabd88/src/DeTai.py
+Permalink tệp kiểm thử tại C: https://github.com/nguyenvandoan010120-lang/N24DCDT015_DT019_NguyenVanDoan/blob/082d256ea3fa89b727f1b13a05f7a0ae95aabd88/test/test_DeTai.py
+SHA S đầy đủ của phiên bản nộp cuối: b599df10bbc9d231e3cc3138297ac524dd1a1f6a
 Xác nhận mã/test/input không đổi giữa C và S, hoặc mô tả phần đã chạy lại: Mã nguồn src/DeTai.py, bộ kiểm thử test/test_DeTai.py và ca demo demo.py không thay đổi giữa C và S.
 
 Ngôn ngữ và phiên bản: Python 3.15 (64-bit)
@@ -32,4 +32,4 @@ Giảng viên truy cập được GitHub và permalink (Có/Chưa): Có
 Tên tệp Word nộp: N24DCDT015_DT019_NguyenVanDoan_BaoCao.docx
 Tên tệp PDF nộp: N24DCDT015_DT019_NguyenVanDoan_BaoCao.pdf
 Tên tệp ZIP mã nguồn nộp: N24DCDT015_DT019_NguyenVanDoan_MaNguon.zip
-Ngày hoàn tất: 17/10/2026
+Ngày hoàn tất: 06/11/2026
